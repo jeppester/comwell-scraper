@@ -130,12 +130,12 @@ const logDates = (d1, d2) => () => {
 const logPriceAndDates = (d1, d2) => (price) => {
   console.log('\n\n|||||||||||||||||||||||||||||||||||||||||||||||||||||||')
   console.log('||')
-  console.log(`|| FRA:    ${prettyDate(d1)}`)
-  console.log(`|| TIL:    ${prettyDate(d2)}`)
+  console.log(`|| FROM:  ${prettyDate(d1)}`)
+  console.log(`|| TO:    ${prettyDate(d2)}`)
   console.log('||')
 
   if (price) {
-    console.log(`|| PRIS:   ${price} kr.`)
+    console.log(`|| PRICE: ${price} DKK`)
   }
   else {
     console.log('|| Ingen værelser! :-/')

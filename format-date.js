@@ -1,24 +1,24 @@
 const monthNumberToString = (n, shortString) => {
   if (shortString) {
     return [
-      'jan', 'feb', 'mar', 'apr', 'maj', 'jun', 'jul',
-      'aug', 'sep', 'okt', 'nov', 'dec',
+      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul',
+      'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
     ][n]
   }
   return [
-    'januar', 'februar', 'marts', 'april', 'maj', 'juni',
-    'juli', 'august', 'september', 'oktober', 'november', 'december',
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December',
   ][n]
 }
 
 const dayNumberToString = (n, shortString) => {
   if (shortString) {
     return [
-      'søn', 'man', 'tir', 'ons', 'tor', 'fre', 'lør'
+      'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'
     ][n]
   }
   return [
-    'søndag', 'mandag', 'tirsdag', 'onsdag', 'torsdag', 'fredag', 'lørdag'
+    'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
   ][n]
 }
 
