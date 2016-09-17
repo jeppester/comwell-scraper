@@ -11,7 +11,7 @@ prompt.delimiter = ' '
 
 // UTILITY FUNCTIONS
 const paramDate = (date) => date.toISOString().substr(0, 10)
-const prettyDate = (date) => formatDate(date, 'l \\d. j. F Y')
+const prettyDate = (date) => formatDate(date, 'l F j Y')
 
 const getSessionId = () => request('http://www.comwell.dk').then((response) =>
   response.headers['set-cookie'][0].match(/PHPSESSID=([^;]*)/)[1]
@@ -138,7 +138,7 @@ const logPriceAndDates = (d1, d2) => (price) => {
     console.log(`|| PRICE: ${price} DKK`)
   }
   else {
-    console.log('|| Ingen værelser! :-/')
+    console.log('|| No rooms available! :-/')
   }
   console.log('||')
   console.log('|||||||||||||||||||||||||||||||||||||||||||||||||||||||')
